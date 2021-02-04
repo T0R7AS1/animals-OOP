@@ -1,8 +1,8 @@
 import { Bird } from './Bird.js';
-class Imposter extends Bird {
+class DragonFly extends Bird {
     constructor(name, color) {
         super(name, color);
-        this.breed = 'Imposter';
+        this.breed = 'DragonFly';
         this.sound = 'bzzzzzz';
         this.Imposter = true;
     }
@@ -10,4 +10,4 @@ class Imposter extends Bird {
         console.log(`${this.breed} ${this.name} is a sneaky imposter ${this.Imposter}`);
     }
 }
-export { Imposter }
+export { DragonFly }

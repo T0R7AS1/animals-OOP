@@ -7,12 +7,13 @@ import { GoldFish } from './components/GoldFish.js';
 import { Chicken } from './components/Chicken.js';
 import { Parrot } from './components/Parrot.js';
 import { Eagle } from './components/Eagle.js';
-import { Imposter } from './components/Imposter.js';
+import { DragonFly } from './components/DragonFly.js';
 
 
 const rexas = new Dog('Rexas', 'brown');
 console.log(rexas);
 rexas.voice();
+rexas.introduce();
 
 const nemo = new Nemo('Nemo', 'blue');
 console.log(nemo);
@@ -27,8 +28,9 @@ const mykolas = new Chicken('mykolas', 'white')
 mykolas.introduce();
 mykolas.voice();
 console.log(mykolas);
+mykolas.flyAway();
 
-const aivaras = new Imposter('Aivaras', 'white');
+const aivaras = new DragonFly('Aivaras', 'white');
 console.log(aivaras);
 aivaras.voice();
 aivaras.imposter();

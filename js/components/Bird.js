@@ -1,15 +1,19 @@
-class Bird {
+import { Animals } from "./Animals.js";
+
+class Bird extends Animals {
     constructor(name, color) {
-        this.name = name;
-        this.color = color;
-        this.breed = 'Unknown animal';
+        super(name, color);
+        this.wingsCount = 2;
+        this.canFly = true;
+        this.environment = 'land';
+        this.outside = 'feathers';
     }
-    voice() {
-        console.log(`${this.breed} ${this.name} says: ${this.sound}`);
-    }
-    introduce() {
-        console.log(`Hi, I am ${this.name}, and my wings is ${this.color}
-        and i say ${this.sound}`);
+    flyAway() {
+        if (this.canFly === false) {
+            console.log(`${this.breed} ${this.name} has ${this.wingsCount} wings but he cant fly because he is not capable of it ${this.canFly}`);
+            return;
+        }
+        console.log(`${this.breed} ${this.name} has ${this.wingsCount} wings and he flew away beacause he is able to fly ${this.canFly}`);
     }
 }
 export { Bird }

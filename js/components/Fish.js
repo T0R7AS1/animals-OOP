@@ -1,19 +1,10 @@
-class Fish {
+import { Animals } from "./Animals.js";
+
+class Fish extends Animals{
     constructor(name, color) { 
-        this.breed = 'Nemo';
+        super(name,color);
         this.environment = 'water';
-        this.name = name;
-        this.color = color;
-        this.sound = 'Bul bul';
-    }
-
-    voice() {
-        console.log(`${this.breed} ${this.name} says: ${this.sound}`);
-    }
-
-    introduce() {
-        console.log(`Hi, I am ${this.name}, and my scales is ${this.color}
-         and i say ${this.sound}`);
+        this.outside = 'scales';
     }
 }
 

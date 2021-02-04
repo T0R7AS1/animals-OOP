@@ -4,6 +4,7 @@ class Chicken extends Bird {
         super(name, color);
         this.breed = 'chicken';
         this.sound = 'kakareku';
+        this.canFly = false;
     }
 }
 export { Chicken }
